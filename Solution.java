@@ -29,7 +29,7 @@ class Solution {
     
     
     public static void main(String args[]) {
-        Scanner in = new Scanner(System.in);
+       try( Scanner in = new Scanner(System.in)){
         int N = in.nextInt();
         int[] tab = new int[N];
         for (int i = 0; i < N; i++) {
@@ -40,5 +40,6 @@ class Solution {
         // Write an action using System.out.println()
 
         System.out.println(Solution(tab));
+       }
     }
 }
