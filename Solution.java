@@ -11,7 +11,7 @@ class Solution {
     List<Integer> list = Arrays.stream(tab).boxed().collect(Collectors.toList());
     Collections.sort(list);
     int i = 0;
-    while( i < list.size()-1){
+    while( i < list.size()-2){
         if(list.get(i)==list.get(i+1)){
             list.remove(i+1);
             
